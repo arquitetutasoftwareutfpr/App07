@@ -46,4 +46,10 @@ public class CountryController {
 
         return "redirect:/country";
     }
+    @DeleteMapping("/{countryId}")
+    public String delete(@PathVariable String countryId) {
+        long idCountry = Long.parseLong(countryId);
+        countryBusiness.delete(idCountry);
+        return "redirect:/country";
+    }
 }
