@@ -55,6 +55,7 @@
                         <th>Name</th>
                         <th>Acronym</th>
                         <th>Phone Digits</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -64,6 +65,7 @@
                         <td>${country.name}</td>
                         <td>${country.acronym}</td>
                         <td>${country.phoneDigits}</td>
+                        <td><a href="/country/delete/${country.id}" onclick="return confirm('Deseja realmente excluir este registro?')" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a></td>
                     </tr>
                 </#list>    
                 </tbody>
